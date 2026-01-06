@@ -1,24 +1,60 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>For You 💝</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You 💖</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    h2 {
+      color: #fff;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    video {
+      width: 90%;
+      max-width: 420px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .next-btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #ff4d6d;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 16px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+  </style>
 </head>
-<body class="simple-bg">
 
-<audio autoplay loop>
-  <source src="bg-music.mp3" type="audio/mpeg">
-</audio>
+<body>
 
-<h1>🎥 For You, Mirudhula 💞</h1>
+  <h2>Just for you, Mirudhula 💕</h2>
 
-<video controls class="video">
-  <source src="birthday.mp4" type="video/mp4">
-</video>
+  <!-- VIDEO (NO BACKGROUND MUSIC) -->
+  <video controls playsinline>
+    <source src="birthday.mp4" type="video/mp4">
+    Your browser does not support the video.
+  </video>
 
-<a href="letter.html" class="btn">Next ➜</a>
+  <a class="next-btn" href="letter.html">Next 💌</a>
 
 </body>
 </html>
